@@ -3,10 +3,10 @@
 import Logo from "@/public/img/logo.svg";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaGithub, FaRegQuestionCircle } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { MdSwapHoriz } from "react-icons/md";
-import About from "../SideBar/About/About";
-import Modal, { Content, OpenBtn } from "../UI/Modal/Modal";
+// import About from "../SideBar/About/About";
+// import Modal, { Content, OpenBtn } from "../UI/Modal/Modal";
 import ShinyText from "../UI/ShinyText/ShinyText";
 import styles from "./Header.module.scss";
 
