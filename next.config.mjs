@@ -4,13 +4,6 @@ import withPWA from 'next-pwa';
 const nextConfig = {
   // output: "export", // 如需静态导出可保留，否则建议注释
   // distDir: "./dist", // 建议注释，使用默认 .next
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"],
-    });
-    return config;
-  },
   pwa: {
     dest: 'public',
     register: true,
