@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import { SettingsProvider } from "./_context/SettingsContext";
 import "./global.scss";
 import StoreProvider from "./storeProvider";
+import { StagewiseToolbar } from "@stagewise/toolbar-next";
 
 export const metadata: Metadata = {
    title: "Flexbox Labs",
@@ -14,11 +15,18 @@ interface RootLayoutProps {
    children: React.ReactNode;
 }
 
+const stagewiseConfig = {
+   plugins: []
+};
+
 export default function RootLayout({ children }: RootLayoutProps) {
    return (
       <html lang="en">
          <body>
             {/* <Header /> */}
+            {process.env.NODE_ENV === "development" && (
+               <StagewiseToolbar config={stagewiseConfig} />
+            )}
             <SettingsProvider>
                <StoreProvider>{children}</StoreProvider>
             </SettingsProvider>

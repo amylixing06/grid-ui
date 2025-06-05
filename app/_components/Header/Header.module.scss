@@ -30,30 +30,29 @@
    .grid_link {
       font-size: 1.4rem;
       font-weight: 600;
-      color: var(--text-secondary);
+      color: var(--color-primary);
       text-decoration: none;
       display: flex;
       align-items: center;
       gap: 0.8rem;
       padding: 1.1rem 1.5rem;
       border-radius: 2.5rem;
-      background-color: var(--bg-secondary);
+      background-color: var(--bg-content-active);
       transition: all 0.3s ease-out;
+      margin-left: auto;
 
       @media (max-width: 825px) {
          padding: 0.8rem 1.2rem;
       }
 
       &:hover {
-         color: var(--text-primary);
+         color: #fff;
+         background-color: var(--color-primary);
       }
 
       svg {
          font-size: 1.8rem;
-
-         @media (max-width: 525px) {
-            display: none;
-         }
+         margin-right: 2px;
       }
 
       .beta {

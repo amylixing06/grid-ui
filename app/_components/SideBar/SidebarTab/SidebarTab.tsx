@@ -51,8 +51,6 @@ function SidebarTab({ tabs, switchState, onSwitch, panelState, togglePanel, stat
             </motion.span>
          </button>
 
-         <hr className={styles.hr} />
-
          {tabs.map((tab, index) => (
             <button
                key={index}
@@ -74,8 +72,6 @@ function SidebarTab({ tabs, switchState, onSwitch, panelState, togglePanel, stat
             </button>
          ))}
 
-         <hr className={styles.hr} />
-
          <Modal>
             <OpenBtn>
                <button className={styles.btn}>
@@ -87,29 +83,6 @@ function SidebarTab({ tabs, switchState, onSwitch, panelState, togglePanel, stat
                <DisplayCode state={state} />
             </Content>
          </Modal>
-
-         <hr className={styles.hr} />
-
-         <Modal>
-            <OpenBtn>
-               <a className={`${styles.btn} ${styles.btn__about}`}>
-                  <FaRegQuestionCircle />
-                  <Tooltip position="right">About</Tooltip>
-               </a>
-            </OpenBtn>
-            <Content>
-               <About />
-            </Content>
-         </Modal>
-
-         <a
-            href="https://github.com/prazzon/flexbox-labs"
-            target="_blank"
-            className={`${styles.btn} ${styles.btn__github}`}
-         >
-            <FaGithub />
-            <Tooltip position="right">GitHub</Tooltip>
-         </a>
       </motion.div>
    );
 }

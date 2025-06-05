@@ -7,8 +7,8 @@ function Empty() {
          <div className={styles.empty__icon}>
             <FcInfo />
          </div>
-         <h3 className={styles.empty__title}>Select an item</h3>
-         <p className={styles.empty__text}>Select an item to edit</p>
+         <h3 className={styles.empty__title}>选择一个项目</h3>
+         <p className={styles.empty__text}>请选择一个项目进行编辑</p>
       </div>
    );
 }

@@ -11,7 +11,7 @@ export const itemsConfig: ItemConfig[] = [
       combineData: [
          {
             key: "gridColumnStart",
-            title: "Grid Column Start",
+            title: "起始列",
             description:
                "Specifies the starting column for an element within the grid.",
             type: "input",
@@ -19,7 +19,7 @@ export const itemsConfig: ItemConfig[] = [
          },
          {
             key: "gridColumnEnd",
-            title: "Grid Column End",
+            title: "结束列",
             description:
                "Specifies the ending column for an element within the grid.",
             type: "input",
@@ -27,7 +27,7 @@ export const itemsConfig: ItemConfig[] = [
          },
       ],
       key: "gridColumn",
-      title: "Grid Column",
+      title: "网格列",
       description:
          "Defines the start and end columns for an element in the grid.",
       icon: LuAlignVerticalSpaceAround,
@@ -42,7 +42,7 @@ export const itemsConfig: ItemConfig[] = [
       combineData: [
          {
             key: "gridRowStart",
-            title: "Grid Row Start",
+            title: "起始行",
             description:
                "Specifies the starting row for an element within the grid.",
             type: "input",
@@ -50,7 +50,7 @@ export const itemsConfig: ItemConfig[] = [
          },
          {
             key: "gridRowEnd",
-            title: "Grid Row End",
+            title: "结束行",
             description:
                "Specifies the ending row for an element within the grid.",
             type: "input",
@@ -58,7 +58,7 @@ export const itemsConfig: ItemConfig[] = [
          },
       ],
       key: "gridRow",
-      title: "Grid Row",
+      title: "网格行",
       description: "Defines the start and end rows for an element in the grid.",
       icon: LuAlignVerticalSpaceAround,
       type: "input",
@@ -67,7 +67,7 @@ export const itemsConfig: ItemConfig[] = [
    },
    {
       key: "justifySelf",
-      title: "Justify Self",
+      title: "水平对齐自身",
       description:
          "Controls horizontal alignment of an element within its grid container.",
       icon: LuAlignVerticalSpaceAround,
@@ -77,7 +77,7 @@ export const itemsConfig: ItemConfig[] = [
    },
    {
       key: "alignSelf",
-      title: "Align Self",
+      title: "垂直对齐自身",
       description:
          "Controls vertical alignment of an element within its grid container.",
       icon: LuAlignVerticalSpaceAround,
@@ -87,7 +87,7 @@ export const itemsConfig: ItemConfig[] = [
    },
    {
       key: "width",
-      title: "Width",
+      title: "宽度",
       description: "Specifies the width of an element, including unit options.",
       icon: LuAlignVerticalSpaceAround,
       type: "input",
@@ -97,7 +97,7 @@ export const itemsConfig: ItemConfig[] = [
    },
    {
       key: "height",
-      title: "Height",
+      title: "高度",
       description:
          "Specifies the height of an element, including unit options.",
       icon: LuAlignVerticalSpaceAround,

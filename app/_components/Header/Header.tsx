@@ -4,7 +4,7 @@ import Logo from "@/public/img/logo.svg";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaGithub, FaRegQuestionCircle } from "react-icons/fa";
-import { HiOutlineExternalLink } from "react-icons/hi";
+import { MdSwapHoriz } from "react-icons/md";
 import About from "../SideBar/About/About";
 import Modal, { Content, OpenBtn } from "../UI/Modal/Modal";
 import ShinyText from "../UI/ShinyText/ShinyText";
@@ -22,42 +22,19 @@ function Header() {
             </h1>
          </a>
          
-         <hr className={styles.divider} />
-
          {pathname !== "/grid" && (
             <Link href="/grid" className={styles.grid_link}>
-               <HiOutlineExternalLink />
-               Grids <span className={styles.beta}>beta</span>
+               <MdSwapHoriz />
+               网格
             </Link>
          )}
 
          {pathname === "/grid" && (
             <Link href="/flexbox" className={styles.grid_link}>
-               <HiOutlineExternalLink />
-               Flexbox
+               <MdSwapHoriz />
+               弹性盒
             </Link>
          )}
-
-         <div className={styles.links}>
-            <Modal>
-               <OpenBtn>
-                  <button className={styles.links__btn}>
-                     <FaRegQuestionCircle />
-                  </button>
-               </OpenBtn>
-               <Content>
-                  <About />
-               </Content>
-            </Modal>
-
-            <a
-               href="https://github.com/prazzon/flexbox-labs"
-               target="_blank"
-               className={styles.links__btn}
-            >
-               <FaGithub />
-            </a>
-         </div>
 
          <a
             href="https://github.com/prazzon/flexbox-labs"

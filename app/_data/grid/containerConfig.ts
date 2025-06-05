@@ -9,7 +9,7 @@ import { ContainerConfig } from "../dataTypes";
 export const containerConfig: ContainerConfig[] = [
    {
       key: "display",
-      title: "Display",
+      title: "显示",
       description:
          "Defines the layout type of the container, such as grid or block.",
       icon: DiGhostSmall,
@@ -20,9 +20,9 @@ export const containerConfig: ContainerConfig[] = [
    {
       itemType: "dropdown",
       dropDownType: "iteration",
-      placeholder: "Grid Column",
+      placeholder: "网格列",
       key: "gridTemplateColumns",
-      title: "Grid Template Columns",
+      title: "网格列模板",
       description:
          "Specifies the column structure of the grid, including sizes and units.",
       icon: LuAlignHorizontalJustifyStart,
@@ -34,9 +34,9 @@ export const containerConfig: ContainerConfig[] = [
    {
       itemType: "dropdown",
       dropDownType: "iteration",
-      placeholder: "Grid Row",
+      placeholder: "网格行",
       key: "gridTemplateRows",
-      title: "Grid Template Rows",
+      title: "网格行模板",
       description:
          "Specifies the row structure of the grid, including sizes and units.",
       icon: LuAlignVerticalJustifyEnd,
@@ -51,7 +51,7 @@ export const containerConfig: ContainerConfig[] = [
       combineData: [
          {
             key: "rowGap",
-            title: "Row Gap",
+            title: "行间距",
             description: "Defines the spacing between rows in the grid.",
             type: "input",
             inputType: "unit",
@@ -59,7 +59,7 @@ export const containerConfig: ContainerConfig[] = [
          },
          {
             key: "columnGap",
-            title: "Column Gap",
+            title: "列间距",
             description: "Defines the spacing between columns in the grid.",
             type: "input",
             inputType: "unit",
@@ -67,7 +67,7 @@ export const containerConfig: ContainerConfig[] = [
          },
       ],
       key: "gap",
-      title: "Gap",
+      title: "间距",
       description:
          "Specifies the spacing between rows and columns in the grid.",
       icon: RxSpaceEvenlyHorizontally,
@@ -78,7 +78,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "justifyItems",
-      title: "Justify Items",
+      title: "水平对齐项目",
       description: "Aligns items horizontally within their grid cells.",
       icon: LuAlignHorizontalJustifyStart,
       type: "select",
@@ -87,7 +87,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "alignItems",
-      title: "Align Items",
+      title: "垂直对齐项目",
       description: "Aligns items vertically within their grid cells.",
       icon: LuAlignVerticalJustifyEnd,
       type: "select",
@@ -96,7 +96,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "justifyContent",
-      title: "Justify Content",
+      title: "水平分布内容",
       description: "Distributes items horizontally within the container.",
       icon: LuAlignHorizontalJustifyStart,
       type: "select",
@@ -112,7 +112,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "alignContent",
-      title: "Align Content",
+      title: "垂直分布内容",
       description: "Distributes items vertically within the container.",
       icon: LuAlignVerticalJustifyEnd,
       type: "select",
@@ -128,7 +128,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "gridAutoColumns",
-      title: "Grid Auto Columns",
+      title: "自动网格列",
       description:
          "Defines the width of columns automatically added to the grid.",
       icon: LuAlignHorizontalJustifyStart,
@@ -139,7 +139,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "gridAutoRows",
-      title: "Grid Auto Rows",
+      title: "自动网格行",
       description:
          "Defines the height of rows automatically added to the grid.",
       icon: LuAlignVerticalJustifyEnd,
@@ -150,7 +150,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "gridAutoFlow",
-      title: "Grid Auto Flow",
+      title: "自动排列方向",
       description: "Controls how items are automatically placed in the grid.",
       icon: DiGhostSmall,
       type: "select",

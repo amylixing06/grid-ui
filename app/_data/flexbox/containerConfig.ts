@@ -14,7 +14,7 @@ import { ContainerConfig } from "../dataTypes";
 export const containerConfig: ContainerConfig[] = [
    {
       key: "display",
-      title: "Display",
+      title: "显示",
       description: "Defines the layout type, such as flex or block.",
       icon: DiGhostSmall,
       type: "select",
@@ -23,7 +23,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "flexDirection",
-      title: "Flex Direction",
+      title: "主轴方向",
       description: "Specifies the direction of the main axis for item layout.",
       icon: TbArrowsRightDown,
       type: "select",
@@ -32,7 +32,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "flexWrap",
-      title: "Flex Wrap",
+      title: "换行方式",
       description:
          "Determines whether items wrap onto multiple lines or stay on one line.",
       icon: LuWrapText,
@@ -42,7 +42,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "justifyContent",
-      title: "Justify Content",
+      title: "主轴对齐",
       description:
          "Aligns items along the main axis, controlling horizontal spacing.",
       icon: LuAlignHorizontalJustifyStart,
@@ -59,7 +59,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "alignItems",
-      title: "Align Items",
+      title: "交叉轴对齐",
       description:
          "Aligns items along the cross axis, affecting vertical alignment.",
       icon: LuAlignVerticalJustifyEnd,
@@ -69,7 +69,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "alignContent",
-      title: "Align Content",
+      title: "多行对齐",
       description:
          "Defines the spacing between flex lines when wrapping occurs.",
       icon: LuAlignVerticalDistributeEnd,
@@ -86,7 +86,7 @@ export const containerConfig: ContainerConfig[] = [
    },
    {
       key: "gap",
-      title: "Gap",
+      title: "间距",
       description:
          "Specifies the spacing between flex items within the container.",
       icon: RxSpaceEvenlyHorizontally,

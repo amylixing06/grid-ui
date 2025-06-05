@@ -96,7 +96,7 @@ function Save({ storageKey, state, setState }: Props) {
 
    return (
       <div className={styles.container}>
-         <h2 className="title">Add Edit</h2>
+         <h2 className="title">添加编辑</h2>
          <form className={styles.form} onSubmit={handleSubmit}>
             <input
                type="text"
@@ -107,11 +107,11 @@ function Save({ storageKey, state, setState }: Props) {
                onChange={(e) => setName(e.target.value)}
             />
             <button className={styles.form__btn} type="submit" disabled={!name}>
-               <RiSaveFill /> Save Edit
+               <RiSaveFill /> 保存编辑
             </button>
          </form>
 
-         <h2 className="title">Saved Edits</h2>
+         <h2 className="title">已保存的编辑</h2>
 
          <Reorder.Group
             axis="y"
@@ -138,7 +138,7 @@ function Save({ storageKey, state, setState }: Props) {
                onClick={Clear}
                type="button"
             >
-               Clear All Saves
+               清空所有保存
             </motion.button>
          )}
       </div>

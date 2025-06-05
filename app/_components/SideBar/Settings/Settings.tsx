@@ -26,7 +26,7 @@ function Settings() {
 
    return (
       <div className={styles.container}>
-         <h2 className="title">Settings</h2>
+         <h2 className="title">设置</h2>
 
          <div className={styles.block}>
             <div className={styles.item}>
@@ -34,7 +34,7 @@ function Settings() {
                   <div className={styles.icon}>
                      <TbSunset2 />
                   </div>
-                  <h4 className={styles.text}>Appearance</h4>
+                  <h4 className={styles.text}>外观</h4>
                </div>
 
                <div className={styles.tile__container}>
@@ -50,7 +50,7 @@ function Settings() {
                         <div className={styles.tile__text_icon}>
                            <MdOutlineLightMode />
                         </div>
-                        <div className={styles.tile__text_title}>Light</div>
+                        <div className={styles.tile__text_title}>浅色</div>
                      </div>
                   </label>
 
@@ -66,7 +66,7 @@ function Settings() {
                         <div className={styles.tile__text_icon}>
                            <MdDarkMode />
                         </div>
-                        <div className={styles.tile__text_title}>Dark</div>
+                        <div className={styles.tile__text_title}>深色</div>
                      </div>
                   </label>
 
@@ -82,7 +82,7 @@ function Settings() {
                         <div className={styles.tile__text_icon}>
                            <CgDarkMode />
                         </div>
-                        <div className={styles.tile__text_title}>Auto</div>
+                        <div className={styles.tile__text_title}>自动</div>
                      </div>
                   </label>
                </div>
@@ -95,7 +95,7 @@ function Settings() {
                   <div className={styles.icon}>
                      <IoColorPaletteOutline />
                   </div>
-                  <h4 className={styles.text}>Accent Color</h4>
+                  <h4 className={styles.text}>主题色</h4>
 
                   <div className={styles.color__container}>
                      <label className={styles.color}>
@@ -152,7 +152,7 @@ function Settings() {
                   <div className={styles.icon}>
                      <TbTextSize />
                   </div>
-                  <h4 className={styles.text}>Text Size</h4>
+                  <h4 className={styles.text}>字体大小</h4>
 
                   <div className={styles.range}>
                      <span className={styles.range__icon}>
@@ -179,7 +179,7 @@ function Settings() {
                   <div className={styles.icon}>
                      <GrMultiple />
                   </div>
-                  <h4 className={styles.text}>Select Multiple</h4>
+                  <h4 className={styles.text}>多选</h4>
                   <Toggle
                      checked={selectMultiple}
                      onChange={() => changeSelectMultiple(!selectMultiple)}
@@ -192,7 +192,7 @@ function Settings() {
                   <div className={styles.icon}>
                      <FiLoader />
                   </div>
-                  <h4 className={styles.text}>Reduce Motion</h4>
+                  <h4 className={styles.text}>减少动画</h4>
                   <Toggle
                      checked={reduceMotion || false}
                      onChange={() => changeReduceMotion(!reduceMotion)}
@@ -201,7 +201,7 @@ function Settings() {
             </div>
          </div>
          <button className={styles.btn} onClick={reset}>
-            Reset to Defaults
+            恢复默认设置
          </button>
       </div>
    );

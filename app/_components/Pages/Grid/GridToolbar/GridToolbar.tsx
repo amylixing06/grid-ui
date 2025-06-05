@@ -27,7 +27,7 @@ export default function FlexboxToolbar() {
    return (
       <Toolbar>
          <ToolbarBtn
-            value="Add"
+            value="添加"
             shortcut={OS === "Mac" ? "cmd + a" : "ctrl + a"}
             onClick={addItem}
          >
@@ -37,7 +37,7 @@ export default function FlexboxToolbar() {
          <ToolbarDivider />
 
          <ToolbarBtn
-            value="Delete"
+            value="删除"
             shortcut={OS === "Mac" ? "cmd + x" : "ctrl + x"}
             onClick={removeItem}
             disabled={emptySelected}
@@ -48,7 +48,7 @@ export default function FlexboxToolbar() {
          </ToolbarBtn>
 
          <ToolbarBtn
-            value="Reset"
+            value="重置"
             shortcut={OS === "Mac" ? "cmd + shift + r" : "ctrl + shift + r"}
             onClick={resetContainer}
          >
@@ -58,7 +58,7 @@ export default function FlexboxToolbar() {
          <ToolbarDivider />
 
          <ToolbarBtn
-            value="Undo"
+            value="撤销"
             shortcut={OS === "Mac" ? "cmd + z" : "ctrl + z"}
             onClick={undo}
             disabled={!canUndo}
@@ -67,7 +67,7 @@ export default function FlexboxToolbar() {
          </ToolbarBtn>
 
          <ToolbarBtn
-            value="Redo"
+            value="重做"
             shortcut={OS === "Mac" ? "cmd + y" : "ctrl + y"}
             onClick={redo}
             disabled={!canRedo}
@@ -78,7 +78,7 @@ export default function FlexboxToolbar() {
          <ToolbarDivider />
 
          <ToolbarBtn
-            value="Grid Lines"
+            value="网格线"
             onClick={toggleGridLines}
             inActive={!gridLines}
          >

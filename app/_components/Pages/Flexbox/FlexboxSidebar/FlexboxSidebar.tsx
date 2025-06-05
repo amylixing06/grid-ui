@@ -34,7 +34,7 @@ export default function FlexboxSidebar() {
 
    const tabs = [
       {
-         name: "Edit",
+         name: "编辑",
          component: (
             <Edit
                selectedItems={selectedItems}
@@ -49,7 +49,7 @@ export default function FlexboxSidebar() {
          icon: <MdOutlineEdit />,
       },
       {
-         name: "Save",
+         name: "保存",
          component: (
             <Save
                storageKey="flexbox"
@@ -60,7 +60,7 @@ export default function FlexboxSidebar() {
          icon: <FaFloppyDisk />,
       },
       {
-         name: "Layout",
+         name: "布局",
          component: (
             <Layout
                layouts={layouts}
@@ -70,7 +70,7 @@ export default function FlexboxSidebar() {
          ),
          icon: <TbLayoutGrid />,
       },
-      { name: "Settings", component: <Settings />, icon: <LuSettings2 /> },
+      { name: "设置", component: <Settings />, icon: <LuSettings2 /> },
    ];
 
    return <SideBar tabs={tabs} state={flexbox} />;

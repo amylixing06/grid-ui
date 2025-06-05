@@ -41,14 +41,14 @@ function Edit({
                data-active={switchState === 1}
                onClick={() => setSwitchState(1)}
             >
-               Container
+               容器
             </div>
             <div
                className={styles.switch}
                data-active={switchState === 2}
                onClick={() => setSwitchState(2)}
             >
-               Items
+               项目
             </div>
          </div>
 
